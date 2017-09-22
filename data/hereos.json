@@ -1,0 +1,9 @@
+{
+"heroes" : [
+{ "title" : "Batman", "fName" : "Bruce", "lName" : "Wayne", "city" : "Gothem", "power" : 7},
+{ "title" : "Superman", "fName" : "Clark", "lName" : "Kent", "city" : "Metropolis", "power" : 8},
+{ "title" : "Spiderman", "fName" : "Peter", "lName" : "Parker", "city" : "New York", "power" : 7},
+{ "title" : "Ironman", "fName" : "Tony", "lName" : "Stark", "city" : "New York", "power" : 7},
+{ "title" : "Phantom", "fName" : "Kit", "lName" : "Walker", "city" : "Bhangala", "power" : 6}
+]
+}
