@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ajax sample</title>
+<script>
+var factory = {
+	
+	request : function(method, url, async){
+		var xhr = null;
+		
+		if(window.XMLHttpRequest){
+			xhr = new XMLHttpRequest();
+			xhr.open(method, url, async);
+			// xhr.send();
+		}else{
+			xhr = new ActiveXObject("microsoftxml");
+			xhr.open(method, url, async);
+			// xhr.send();
+		}
+		
+		return xhr;
+	}
+};
+
+window.onload = function(){
+				var xhr = factory.request("get","http://localhost:8080/data/hereos.json", true);
+				xhr.send();
+					xhr.onreadystatechange = function(){
+						if(xhr.readyState == 4 && xhr.status == 200){
+							var data = JSON.parse(xhr.responseText);
+							for(var i = 0; i < data.heroes.length; i++){
+								var data = JSON.parse(xhr.responseText);
+								var ht = data.heroes[i].title;
+								var hf = data.heroes[i].fName;
+								var hl = data.heroes[i].lName;
+								var hc = data.heroes[i].city;
+								var hp = data.heroes[i].power;
+								document.querySelector("body").append("<br>"+data+" "+ht+" "+hf+" "+hl+" "+hc+" "+hp);
+								
+								}
+						}
+					};
+		};
+
+</script>
+</head>
+
+<body>
+<div id="box"></div>
+</body>
+
+</html>

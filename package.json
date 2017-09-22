@@ -1,0 +1,23 @@
+{
+  "name": "sampleprogram",
+  "version": "1.0.0",
+  "description": "sample javscript samples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SridhanyaG/javascriptsamplesfromtraining.git"
+  },
+  "author": "sridhanya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SridhanyaG/javascriptsamplesfromtraining/issues"
+  },
+  "homepage": "https://github.com/SridhanyaG/javascriptsamplesfromtraining#readme",
+  "dependencies": {
+    "connect": "^3.6.4",
+    "serve-static": "^1.12.5"
+  }
+}
